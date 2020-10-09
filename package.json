@@ -5,15 +5,32 @@
   "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node bot.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "chalk": "^4.1.0",
+    "common-tags": "^1.8.0",
+    "date-unit-ms": "^1.1.14",
+    "discord.js": "^11.5.1",
+    "express": "^4.17.1",
+    "jimp": "^0.14.0",
+    "lowdb": "^1.0.0",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.2.2",
+    "ms": "^2.1.2",
+    "parse-ms": "^2.0.0",
+    "quick.db": "^7.1.1",
+    "request": "^2.88.2",
+    "simple-youtube-api": "^5.2.1",
+    "snekfetch": "^4.0.4",
+    "useful-tools": "^0.2.6",
+    "weather-js": "^2.0.0",
+    "ytdl-core": "^3.2.0"
   },
   "engines": {
-    "node": "12.x"
+    "node": "8.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
