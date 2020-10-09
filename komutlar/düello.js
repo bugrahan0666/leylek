@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
                                 const verification = await verify(message.channel, opponent);
                                 if (!verification) {
                                         this.fighting.delete(message.channel.id);
-                                        return message.channel.send(`<:ak:617145990742278144> Düello kabul edilmedi...`);
+                                        return message.channel.send(`Düello kabul edilmedi...`);
                                 }
                         }
                         let userHP = 500;
