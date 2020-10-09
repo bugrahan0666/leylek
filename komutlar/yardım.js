@@ -6,9 +6,9 @@ var ayarlar = require('../ayarlar.json');
 exports.run = async (client, message, args, msg) => {
 
     const embed = new Discord.RichEmbed()
-    
+    .setTitle("LEYLEK EĞLENCE BOTU")
     .setColor('RANDOM')
-    
+    .setImage('https://media.giphy.com/media/ySjWbwKMENUNFGy4nf/giphy.gif')
     .addField(`💥LEYLEK YARDIM💥`,
               
     `-💥**adamasmaca** - Adam Asmaca oynamanızı sağlar!
@@ -30,12 +30,12 @@ exports.run = async (client, message, args, msg) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['help'],
+  aliases: ['help' , 'yardım'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'yardımgif',
-  description: 'yardımgif',
-  usage: 'yardımgif'
+  name: 'yardım',
+  description: 'yardım',
+  usage: 'yardım'
 };

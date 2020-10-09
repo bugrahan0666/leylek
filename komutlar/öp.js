@@ -25,7 +25,7 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['öp'],
   permLevel: 0,
   kategori: "eğlence"
 };
