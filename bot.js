@@ -193,11 +193,6 @@ client.on("error", e => {
 
 
 client.login(ayarlar.token);
-
-client.on('ready', ()=>{
-client.channels.get('756849938809487450').join()
-})
-
 client.on('message', async msg => { 
 if (msg.content.toLowerCase() === 'sa') { 
 await msg.react('🇦'); 
