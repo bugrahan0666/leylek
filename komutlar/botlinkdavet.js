@@ -12,7 +12,11 @@ exports.run = (client, message) => {
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .setDescription(' [Botu Eklemek İçin Tıkla]( https://discord.com/oauth2/authorize?client_id=764612075644256287&scope=bot&permissions=1526848)');
+  .setTitle("LEYLEK EĞLENCE BOTU!")
+.setFooter("LEYLEK")
+  .setImage('https://media.giphy.com/media/ySjWbwKMENUNFGy4nf/giphy.gif')
+    .setDescription(`**LEYLEK BOTUNA DESTEK OLDUĞUNUZ İÇİN TEŞEKKÜR EDERİZ!**  
+**[Botu Eklemek İçin Tıkla]( https://discord.com/oauth2/authorize?client_id=764612075644256287&scope=bot&permissions=1526848)**`);
     return message.author.sendEmbed(pingozel)
 };
 
