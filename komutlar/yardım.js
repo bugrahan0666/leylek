@@ -22,8 +22,8 @@ exports.run = async (client, message, args, msg) => {
 
      :white_check_mark: **Linkler** :white_check_mark:
 
-     [Botun Destek Sunucusuna Gitmek İçin Tıkla](BOTUNUZUN DAVET LİNKİ)    
-     [Botu Eklemek İçin Tıkla](BOTUNUZUN DAVET LİNKİ)`)
+     [Botun Destek Sunucusuna Gitmek İçin Tıkla](https://discord.gg/fhBx9jw)    
+     [Botu Eklemek İçin Tıkla]( https://discord.com/oauth2/authorize?client_id=764612075644256287&scope=bot&permissions=1526848)`)
     
      message.channel.send({embed});
     }

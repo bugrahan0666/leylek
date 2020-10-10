@@ -12,7 +12,7 @@ exports.run = (client, message) => {
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .setDescription('**Bot Invitation / Botun Davet Linki**: BOTUN DAVET LİNKİNİ KOY ');
+    .setDescription(' [Botu Eklemek İçin Tıkla]( https://discord.com/oauth2/authorize?client_id=764612075644256287&scope=bot&permissions=1526848)');
     return message.author.sendEmbed(pingozel)
 };
 
