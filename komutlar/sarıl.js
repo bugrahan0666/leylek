@@ -8,7 +8,7 @@ if(!kişi) return message.channel.send("Bir kişiyi etiketle veya idsini yaz.")
 
 const embed = new Discord.RichEmbed() 
 .setDescription(`<@${message.author.id}>, <@${kişi.id}> adlı kişiye sarıldı!`)
-.setImage("https://media.giphy.com/media/KlcIUgc4QBktAiwrNT/giphy.gif")
+.setImage("https://media.giphy.com/media/KlcIUgc4QBktAiwrNT/giphy.gif" ,"https://media.giphy.com/media/XUjvWhNTI25USV3Urp/giphy.gif")
 return message.channel.send(embed)
 }
 
