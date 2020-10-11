@@ -47,12 +47,12 @@ exports.run = async (client, message, args) => {
                                 let choice;
                                 if (!opponent.bot || (opponent.bot && userTurn)) {
                                         await message.channel.send(stripIndents`
-                                                ${user}, ne yapmak istersin? \`saldır\`, \`savun\`, \`ultra güç\`, veya \`kaç\`?
+                                                ${user}, ne yapmak istersin? \`saldır\`, \`savun\`, \`ulti\`, veya \`kaç\`?
                                                 **${message.author.username}**: ${userHP} :heartpulse:
                                                 **${opponent.username}**: ${oppoHP} :heartpulse:
                                         `);
                                         const filter = res =>
-                                                res.author.id === user.id && ['saldır', 'savun', 'ultra güç', 'kaç'].includes(res.content.toLowerCase());
+                                                res.author.id === user.id && ['saldır', 'savun', 'ulti', 'kaç'].includes(res.content.toLowerCase());
                                         const turn = await message.channel.awaitMessages(filter, {
                                                 max: 1,
                                                 time: 30000
@@ -64,7 +64,7 @@ exports.run = async (client, message, args) => {
                                         }
                                         choice = turn.first().content.toLowerCase();
                                 } else {
-                                        const choices = ['saldır', 'savun', 'ultra güç'];
+                                        const choices = ['saldır', 'savun', 'ulti'];
                                         choice = choices[Math.floor(Math.random() * choices.length)];
                                 }
                                 if (choice === 'saldır') {
@@ -76,22 +76,22 @@ exports.run = async (client, message, args) => {
                                         await message.channel.send(`${user}, kendisini süper kalkan ile savundu!`);
                                         guard = true;
                                         reset(false);
-                                } else if (choice === 'ultra güç') {
+                                } else if (choice === 'ulti') {
                                         const miss = Math.floor(Math.random() * 4);
                                         if (!miss) {
                                                 const damage = randomRange(100, guard ? 150 : 300);
-                                                await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterki miktarda topladın ve **${damage}** hasar vurdun!!`);
+                                                await message.channel.send(`${user}, Ultini kullanarak tam olarak **${damage}** hasar vurdun!! Helal olsun!`);
                                                 dealDamage(damage);
                                         } else {
-                                                await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterli miktarda toplayamadığın için ulta güç kullanamadın!`);
+                                                await message.channel.send(`${user}, Hadi be! Ultin çalışmadı! Bir dahakine!`);
                                         }
                                         reset();
                                 } else if (choice === 'kaç') {
-                                        await message.channel.send(`${user}, kaçtı! Korkak!`);
+                                        await message.channel.send(`${user}, kaçtı! Ayıp!`);
                                         forfeit();
                                         break;
                                 } else {
-                                        await message.reply('Ne yapmak istediğini anlamadım.');
+                                        await message.reply('Ne yapmak istediğini anlamadım dostum.');
                                 }
                         }
                         this.fighting.delete(message.channel.id);
