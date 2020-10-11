@@ -19,7 +19,11 @@ exports.run = async (client, message, args, msg) => {
      -💥**yazı-tura** Yazı Tura oynamanızı sağlar!
      -💥**zarat** Zar atmanızı sağlar!
      -💥**öp** Birini öpmenizi sağlar!
-
+     -💥**alkış** Alkışlamanızı sağlar!
+     -💥**aşkölçer** Etiketlediğiniz kişiyle aşkınızı ölçer!
+-💥**boksmakinesi-bk** Boks makinesi oynamanızı sağlar!
+-💥**şanslısayı** Burcunuzun şanslı sayısını bulmanızı sağlar!
+-💥**** Birini öpmenizi sağlar!
      :white_check_mark: **Linkler** :white_check_mark:
 
      [Botun Destek Sunucusuna Gitmek İçin Tıkla](https://discord.gg/fhBx9jw)    
