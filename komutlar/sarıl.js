@@ -1,37 +1,26 @@
-const Discord = require('discord.js')
+const Discord = require("discord.js")
+const db = require("quick.db")
 
 exports.run = (client, message, args) => {
-  let user = message.mentions.users.first();
-  if(!user) return message.channel.send('Sarılacağın birisini etiketlemelisin')
-  
-    
-  if ( message.react('??')) {
-      var sarl = [
-      'https://media.giphy.com/media/b1vd93Y71rZewZNbn9/giphy.gif'];
+let kişi = message.mentions.users.first() || args[0]
 
-      var sarl = sarl[Math.floor(Math.random() * sarl.length)];
-  }
-    
-    if (message.react('??')) {
-    const op = new Discord.RichEmbed()
-    .setDescription(`<@${message.author.id}>` + ` <@${user.id}> adlı kullanıcıya sarıldı. :heart:`)
-    .setColor('RANDOM')
-    .setImage(sarl)
-    return message.channel.send(sarl)
-    }
-  
-};
+if(!kişi) return message.channel.send("Bir kişiyi etiketle veya idsini yaz.")
+
+const embed = new Discord.RichEmbed() 
+.setDescription(`<@${message.author.id}>, <@${kişi.id}> adlı kişiye sarıldı!`)
+.setImage("https://media.giphy.com/media/KXlkT2UQNki55FKEeG/giphy.gif")
+return message.channel.send(embed)
+}
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ['sarıl'],
-  permLevel: 0,
-  kategori: "eğlence"
-};
+enabled: true,
+guildOnly: true,
+aliases: [],
+permLevel: 0
+}
 
 exports.help = {
-  komut: 'sarıl',
-  description: 'sarıl',
-  usage: 'sarıl'
-};
+name:"sarıl",
+description:"etiketlediğin kişiye sarılırsınız",
+usage: "sarıl @kişi/id"
+}
