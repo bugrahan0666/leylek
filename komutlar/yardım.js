@@ -9,21 +9,22 @@ exports.run = async (client, message, args, msg) => {
     .setTitle("LEYLEK EĞLENCE BOTU")
     .setColor('RANDOM')
     .setImage('https://media.giphy.com/media/ySjWbwKMENUNFGy4nf/giphy.gif')
-    .addField(`💥LEYLEK YARDIM💥`,
+    .addField(`💥LEYLEK YARDIM💥`, 
               
-    `-💥**adamasmaca** - Adam Asmaca oynamanızı sağlar!
-     -💥**avatar** Etiketlediğiniz kişinin etiketini gösterir!
-     -💥**düello** Düello oynamanızı sağlar!
-     -💥**gifara** Gif aramınızı sağlar.!
-     -💥**sayıtahmini-st** Rastgele Bebek Gifi Atar!
-     -💥**yazı-tura** Yazı Tura oynamanızı sağlar!
-     -💥**zarat** Zar atmanızı sağlar!
-     -💥**öp** Birini öpmenizi sağlar!
-     -💥**alkış** Alkışlamanızı sağlar!
-     -💥**aşkölçer** Etiketlediğiniz kişiyle aşkınızı ölçer!
--💥**boksmakinesi-bk** Boks makinesi oynamanızı sağlar!
--💥**şanslısayı** Burcunuzun şanslı sayısını bulmanızı sağlar!
--💥**** Birini öpmenizi sağlar!
+    ` -💥**adamasmaca** - Adam Asmaca oynamanızı sağlar!
+      -💥**avatar** Etiketlediğiniz kişinin etiketini gösterir!
+      -💥**düello** Düello oynamanızı sağlar!
+      -💥**gifara** Gif aramınızı sağlar.!
+      -💥**sayıtahmini-st** Rastgele Bebek Gifi Atar!
+      -💥**yazı-tura** Yazı Tura oynamanızı sağlar!
+      -💥**zarat** Zar atmanızı sağlar!
+      -💥**öp** Birini öpmenizi sağlar!
+      -💥**alkış** Alkışlamanızı sağlar!
+      -💥**aşkölçer** Etiketlediğiniz kişiyle aşkınızı ölçer!
+      -💥**boksmakinesi-bk** Boks makinesi oynamanızı sağlar!
+      -💥**şanslısayı** Burcunuzun şanslı sayısını bulmanızı sağlar!
+      -💥**ilginçbilgi** Bot size ilgin bilgi verir!
+
      :white_check_mark: **Linkler** :white_check_mark:
 
      [Botun Destek Sunucusuna Gitmek İçin Tıkla](https://discord.gg/fhBx9jw)    
