@@ -4,7 +4,7 @@ exports.run = async (Bastion, message, args) => {
   try {
     if (args.length < 1) {
 
-      return message.reply("**Doğru Kullanım**: l!gif <aranacak gif>");
+      return message.reply("**Doğru Kullanım**: f!gif <aranacak gif>");
     }
 
     let options = {
